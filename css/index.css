@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #f4623a;
-  --bs-link-hover-color: #c34e2e;
+  --bs-link-color: #000000;
+  --bs-link-hover-color: #EEDFC5;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -10914,8 +10914,8 @@ hr.divider-light {
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
+  padding-top: 13rem;
+  padding-bottom: calc(13rem - 4.5rem);
   background: url("../assets/img/portada1.jpg");
   background-position: center;
   background-repeat: no-repeat;
