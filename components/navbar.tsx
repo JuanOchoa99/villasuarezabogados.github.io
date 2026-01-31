@@ -17,8 +17,9 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: "#quienes-somos", label: "¿Quiénes Somos?" },
+    { href: "#inicio", label: "Inicio" },
     { href: "#especialidades", label: "Especialidades" },
+    { href: "#audiencias", label: "Audiencias" },
     { href: "#contacto", label: "Contacto" },
   ];
 
@@ -33,9 +34,9 @@ export function Navbar() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
           <Link
-            href="#"
-            className={`font-sans font-bold text-xl transition-colors ${
-              isScrolled ? "text-foreground" : "text-white"
+            href="#inicio"
+            className={`font-serif font-bold text-xl transition-colors ${
+              isScrolled ? "text-foreground" : "text-primary"
             }`}
           >
             Villa Suárez Abogados

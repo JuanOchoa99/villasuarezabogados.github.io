@@ -15,16 +15,15 @@ const merriweatherSans = Merriweather_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Villa Suárez Abogados | Derecho Penal, Civil y Disciplinario",
+  title: "Villa Suárez Abogados",
   description:
-    "Equipo de abogados especializados en derecho penal, derecho civil, derecho de familia y derecho disciplinario en Colombia. Asesoría y representación legal personalizada.",
+    "Tu libertad es nuestra prioridad: Asesoría y defensa en Derecho Penal con resultados comprobados. 95% de casos exitosos.",
   keywords: [
-    "abogados",
+    "abogados penalistas",
     "derecho penal",
-    "derecho civil",
-    "derecho disciplinario",
     "abogados Colombia",
     "Villa Suárez",
+    "defensa penal",
   ],
 };
 
