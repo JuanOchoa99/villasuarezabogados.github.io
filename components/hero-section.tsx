@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
-    <header id="inicio" className="relative min-h-screen flex items-center justify-center">
+    <header
+      id="inicio"
+      className="relative min-h-screen flex items-center justify-center"
+    >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -14,31 +16,27 @@ export function HeroSection() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/60" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center">
+      <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-primary font-serif font-bold text-4xl md:text-5xl lg:text-6xl mb-8 leading-tight">
-            Tu libertad es nuestra prioridad: Asesoría y defensa en Derecho Penal con resultados comprobados.
-          </h1>
-          <p className="text-primary font-serif text-xl md:text-2xl mb-10">
+          <h4 className="text-[#EEDFC5] font-serif text-2xl md:text-3xl lg:text-4xl mb-6 leading-relaxed">
+            Tu libertad es nuestra prioridad: Asesoría y defensa en Derecho
+            Penal con resultados comprobados.
+          </h4>
+          <h6 className="text-[#EEDFC5] font-serif text-base md:text-lg mb-10">
             95% de casos exitosos
-          </p>
-          <Button
-            asChild
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 font-sans font-semibold px-10 py-6 text-lg rounded-full"
+          </h6>
+          <Link
+            href="https://wa.me/+573003446228?text=Estoy%20interesado%20en%20alguno%20de%20los%20servicios."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#EEDFC5] text-black font-sans font-semibold px-8 py-3 rounded-full hover:bg-[#e0d0b5] transition-colors text-sm uppercase tracking-wider"
           >
-            <Link
-              href="https://wa.me/+573003446228?text=Estoy%20interesado%20en%20alguno%20de%20los%20servicios."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Contactanos
-            </Link>
-          </Button>
+            Contactanos
+          </Link>
         </div>
       </div>
     </header>

@@ -26,18 +26,14 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-sm shadow-md py-3"
-          : "bg-transparent py-4"
+        isScrolled ? "bg-black/95 backdrop-blur-sm py-3" : "bg-transparent py-4"
       }`}
     >
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           <Link
             href="#inicio"
-            className={`font-serif font-bold text-xl transition-colors ${
-              isScrolled ? "text-foreground" : "text-primary"
-            }`}
+            className="font-serif font-bold text-lg text-[#EEDFC5] hover:text-[#e0d0b5] transition-colors"
           >
             Villa Suárez Abogados
           </Link>
@@ -48,9 +44,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-sans text-sm font-medium transition-colors hover:text-primary ${
-                  isScrolled ? "text-foreground" : "text-white"
-                }`}
+                className="font-sans text-sm text-white/90 hover:text-[#EEDFC5] transition-colors"
               >
                 {link.label}
               </Link>
@@ -60,9 +54,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`lg:hidden p-2 ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}
+            className="lg:hidden p-2 text-white"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -78,9 +70,7 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`font-sans text-sm font-medium transition-colors hover:text-primary ${
-                    isScrolled ? "text-foreground" : "text-white"
-                  }`}
+                  className="font-sans text-sm text-white/90 hover:text-[#EEDFC5] transition-colors"
                 >
                   {link.label}
                 </Link>

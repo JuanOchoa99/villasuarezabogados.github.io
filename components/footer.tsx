@@ -1,9 +1,9 @@
 export function Footer() {
   return (
-    <footer className="py-6 bg-background border-t border-border">
-      <div className="container mx-auto px-4 lg:px-8">
-        <p className="text-center text-sm text-muted-foreground">
-          Copyright &copy; {new Date().getFullYear()} - Villa Suárez Abogados
+    <footer className="py-6 bg-[#212529] text-center">
+      <div className="container mx-auto px-6">
+        <p className="text-white/60 text-sm font-sans">
+          Copyright © Villa Suárez Abogados 2024
         </p>
       </div>
     </footer>

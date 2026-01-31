@@ -1,8 +1,7 @@
-import { FileCheck, Scale, FileText, Briefcase } from "lucide-react";
+import { Star } from "lucide-react";
 
 const audienceCategories = [
   {
-    icon: FileCheck,
     title: "Preliminares",
     items: [
       "Legalización de captura",
@@ -11,16 +10,10 @@ const audienceCategories = [
     ],
   },
   {
-    icon: Scale,
     title: "Dentro del proceso",
-    items: [
-      "Formulación de acusación",
-      "Preparatoria",
-      "Juicio oral",
-    ],
+    items: ["Formulación de acusación", "Preparatoria", "Juicio oral"],
   },
   {
-    icon: FileText,
     title: "Otras audiencias",
     items: [
       "Vencimiento de términos",
@@ -29,48 +22,39 @@ const audienceCategories = [
     ],
   },
   {
-    icon: Briefcase,
     title: "Otros trámites",
-    items: [
-      "Preclusión",
-      "Principios de oportunidad",
-      "Preacuerdos",
-    ],
+    items: ["Preclusión", "Principíos de oportunidad", "Preacuerdos"],
   },
 ];
 
 export function AudiencesSection() {
   return (
-    <section id="audiencias" className="py-20 bg-secondary">
-      <div className="container mx-auto px-4 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16">
+    <section id="audiencias" className="py-24 bg-[#f8f9fa]">
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl md:text-4xl font-serif text-center mb-20 text-black">
           Audiencias
         </h2>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
           {audienceCategories.map((category, index) => (
-            <div
-              key={index}
-              className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow border border-border"
-            >
-              <div className="flex flex-col items-center text-center">
-                <div className="mb-4 p-3 bg-primary/10 rounded-full">
-                  <category.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
-                </div>
-                <h3 className="font-serif font-bold text-lg mb-4 text-foreground">
-                  {category.title}
-                </h3>
-                <ul className="space-y-2 text-sm">
-                  {category.items.map((item, itemIndex) => (
-                    <li
-                      key={itemIndex}
-                      className="text-muted-foreground"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+            <div key={index} className="text-center">
+              <div className="flex justify-center mb-4">
+                <Star
+                  className="w-10 h-10 text-[#EEDFC5]"
+                  fill="#EEDFC5"
+                  strokeWidth={0}
+                />
               </div>
+              <h4 className="font-serif text-lg mb-4 text-black">
+                {category.title}
+              </h4>
+              <ul className="space-y-1">
+                {category.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="text-gray-600 text-sm">
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
